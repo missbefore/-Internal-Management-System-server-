@@ -1,0 +1,34 @@
+{
+  "database" :{
+    "Dialect": "mysql",
+    "Database": "wc_open",
+    "User":"root",
+    "Password": "root",
+    "Host": "127.0.0.1",
+    "Port": 3306,
+    "Charset"      : "utf8mb4"
+  },
+  "go": {
+    "APIPoweredBy"        : "Golang",/*后台go加的X-Powered-By*/
+    "SiteName"            : "",      /*网站名称*/
+    "Host"                : "",  /*网站域名*/
+    "ImgHost"             : "",  /*图片服务器域名*/
+    "Env"                 : "development",        /*模式(开发，测试，产品)*/
+    "LogDir"              : "", /*日志文件所在的目录，如果不设的话，默认在项目目录下*/
+    "ClientAPIPrefix"     : "/api", /*api服务请求前缀*/
+    "ServerAPIPrefix"     : "/server_api", /*api服务请求前缀*/
+    "UploadImgDir"        : "",
+    "ImgPath"             : "/upload/img",        /*上传后的图片请求地址前缀*/
+    "MaxMultipartMemory"  : 3, /*上传的图片最大允许的大小，单位MB*/
+    "Port"                : 8080,                 /*go监听的端口*/
+    "StatsEnabled"        : false, /*是否开启数据统计功能, 开启的话要安装mongodb*/
+    "TokenSecret"         : "xxxxxxxxx", /*TokenSecret，请修改*/
+    "TokenMaxAge"         : 86400, /*token多久过期，单位秒*/
+    "PassSalt"            : "xrjoN1qR",           /*用户密码加盐，请修改*/
+    "MailUser"            : "", /*域名邮箱账号*/
+    "MailPass"            : "", /*域名邮箱密码*/
+    "MailHost"            : "smtp.qq.com",        /*smtp邮箱域名*/
+    "MailPort"            : 465,                  /*smtp邮箱端口*/
+    "MailFrom"            : ""          /*邮件来源*/
+  }
+}
